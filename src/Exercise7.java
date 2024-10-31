@@ -3,7 +3,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Exercise7 {
-
   public static void main(String[] args) {
     HashMap<String, List<Integer>> students = new HashMap<>();
     addInForStudents(students, "Duc", List.of( 90, 80, 70));
@@ -12,10 +11,9 @@ public class Exercise7 {
     addInForStudents(students, "Dung", List.of( 95, 80, 75));
     calculateAverScores(students);
 
-
   }
 
-  public static void addInForStudents(HashMap<String, List<Integer>> students, String name, List<Integer> score) {
+  private static void addInForStudents(HashMap<String, List<Integer>> students, String name, List<Integer> score) {
     if (students.containsKey(name)) {
       students.get(name).addAll(score);
     } else {
@@ -25,7 +23,7 @@ public class Exercise7 {
     }
   }
 
-  public static void calculateAverScores(HashMap<String, List<Integer>> students) {
+  private static void calculateAverScores(HashMap<String, List<Integer>> students) {
     for (String name : students.keySet()) {
       List<Integer> scores = students.get(name);
       int sum = 0;

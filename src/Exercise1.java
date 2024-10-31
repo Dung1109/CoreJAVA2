@@ -15,18 +15,18 @@ public class Exercise1 {
 
     }
 
-    public static void addElement(List<Integer> list, int element) {
+    private static void addElement(List<Integer> list, int element) {
         list.add(element);
     }
 
-    public static void showElements(List<Integer> list) {
+    private static void showElements(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + "");
             System.out.println();
         }
     }
 
-    public static void findMaxAndMinValue(List<Integer> list) {
+    private static void findMaxAndMinValue(List<Integer> list) {
         int max = list.get(0);
         int min = list.get(0);
 
@@ -44,12 +44,12 @@ public class Exercise1 {
         System.out.println("Min value: " + min);
     }
 
-    public static void removeElement(List<Integer> list, int element) {
+    private static void removeElement(List<Integer> list, int element) {
         list.remove(element);
         showElements(list);
     }
 
-    public static void checkExistElement(List<Integer> list, int element) {
+    private static void checkExistElement(List<Integer> list, int element) {
         if (list.contains(element)) {
             System.out.println("Element " + element + " is exist in list");
         } else {

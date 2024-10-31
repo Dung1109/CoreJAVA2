@@ -10,12 +10,12 @@ public class Exercise4 {
         reverseSortList(list);
     }
 
-    public static void sortList(ArrayList<Integer> list) {
+    private static void sortList(ArrayList<Integer> list) {
         Collections.sort(list);
         System.out.println(list);
     }
 
-    public static void reverseSortList(ArrayList<Integer> list) {
+    private static void reverseSortList(ArrayList<Integer> list) {
         Collections.sort(list, Collections.reverseOrder());
         System.out.println(list);
     }
